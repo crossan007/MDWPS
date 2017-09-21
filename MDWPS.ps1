@@ -31,9 +31,9 @@ if ($DumpWindows)
     {
         $ThisWindow = New-Object -TypeName PSObject
         $ThisWindow |Add-Member -MemberType NoteProperty -Name ProcessName -Value $($Process.Name)
-        $ThisWindow |Add-Member -MemberType NoteProperty -Name WindowTitle -Value $($Process.MainWindowTitle)
-        $ThisWindow |Add-Member -MemberType NoteProperty -Name Top -Value 0
-        $ThisWindow |Add-Member -MemberType NoteProperty -Name Left -Value 0
+        $ThisWindow |Add-Member -MemberType NoteProperty -Name MainWindowTitle -Value $($Process.MainWindowTitle)
+        $ThisWindow |Add-Member -MemberType NoteProperty -Name X -Value 0
+        $ThisWindow |Add-Member -MemberType NoteProperty -Name Y -Value 0
         $ThisWindow |Add-Member -MemberType NoteProperty -Name Width -Value 0
         $ThisWindow |Add-Member -MemberType NoteProperty -Name Height -Value 0
         $WindowConfigs += $ThisWindow
